@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color: blue;
+        }
+
+        .error>p{
+            text-decoration: line-through;
+        }
+        /* 자손 셀렉트 , 스페이스바 */
+
+        .error p {
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequatur! Voluptatum molestiae quam est quibusdam a sint repudiandae modi quaerat. Est et ad corrupti, repellat commodi odit blanditiis rem fuga.
+            </p>
+        </div>
+    </div>
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae repellendus, magni provident ullam fugiat asperiores voluptatum officia sequi quasi assumenda magnam sapiente laudantium voluptate, blanditiis quod, hic ipsa quaerat?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* child selector */
+        p{
+            text-decoration: underline;
+        }
+
+        .error>p{
+            background-color: yellow;
+        }
+
+        div>p{
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- .note>.error>p>lorem3 -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem, ipsum dolor.
+            </p>
+        </div>
+    </div>
+    <!-- .error>.note>p>lorem3 -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem, ipsum dolor.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

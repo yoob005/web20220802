@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제 셀렉터 */
+        h1 + p{
+            color: blue;
+        }
+
+        .error+p{
+            border: 5px solid;
+        }
+
+        .note+p{
+            text-decoration: line-through;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="error"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam at magni temporibus autem id eligendi harum error veniam ut, dolores, esse quod ducimus repellendus et tempore repudiandae quasi laboriosam!
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta distinctio laboriosam architecto, ex quaerat cumque, error ipsam veritatis magnam dolorem quae rerum iste, nisi deserunt et voluptatem? Quasi, aliquid!
+    </p>
+</body>
+</html>
