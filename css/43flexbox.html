@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .item{
+        .top-menu {
+            display: flex;
+            background-color: white;
+            font-size: 15px;
+            top: -40px;
+            right: 16px;
+            padding: 5px 20px 10px 18px;
+            border: 10px;
+            color: black;
+            font-weight: bold;
+            justify-content: flex-start;
+        }
+
+        .top-menu>div {
+            width: 200;
+            height: 80;
+            font-size: 20px;
+            font-weight: lighter;
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .item {
             display: flex;
             background-color: rgb(46, 39, 39);
             font-size: 15px;
-            top : -40px;
+            top: -40px;
             right: 16px;
             padding: 5px 20px 10px 18px;
             border: 10px;
             color: white;
             font-weight: bold;
             justify-content: flex-start;
-            
+
         }
-        .item > div{
+
+        .item>div {
             width: 200;
             height: 80;
             color: white;
@@ -26,8 +53,32 @@
             box-sizing: border-box;
             text-align: center;
         }
-        #item16{
+        .choose:hover {
+            background-color: rgb(6, 165, 125);
+        }
+
+        #item16 {
             margin-right: auto;
+        }
+
+
+        .fa-w {
+            color: rgb(6, 165, 125);
+            font-size: 30px;
+        }
+
+        .fa-house{
+            color: white;
+        }
+
+        #menu5 {
+            margin-right: auto;
+        }
+
+        @media screen and {min-width: 769px;
+            .top-menu .item{
+                padding: 0px 16px;
+            }
         }
 
         /* #item17{
@@ -35,28 +86,43 @@
         } */
     </style>
 </head>
+
 <body>
-    <div class="item">
-        <div><i class="fa-solid fa-house"></i></div>
-        <div id="item1">HTML</div>
-        <div id="item2">CSS</div>
-        <div id="item3">JAVASCRIPT</div>
-        <div id="item4">SQL</div>
-        <div id="item5">PYTHON</div>
-        <div id="item6">PHP</div>
-        <div id="item7">BOOTSTRAP</div>
-        <div id="item8">HOW TO</div>
-        <div id="item9">W3.CSS</div>
-        <div id="item10">JAVA</div>
-        <div id="item11">JQUERY</div>
-        <div id="item12">C</div>
-        <div id="item13">C++</div>
-        <div id="item14">C#</div>
-        <div id="item15">R</div>
-        <div id="item16">React</div>
-        <div><i class="fa-solid fa-circle-half-stroke"></i></div>
-        <div ><i class="fa-solid fa-earth-americas"></i></div>
-        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="container">
+        <div class="top-menu">
+            <a href="http://w3schools.com"><i class="fa-solid fa-w"></i></a>
+            <div class="choose" id="menu2">Tutorials<i class="fa-solid fa-caret-down"></i></div>
+            <div class="choose"id="menu3">References<i class="fa-solid fa-caret-down"></i></div>
+            <div class="choose"id="menu4">Exercises<i class="fa-solid fa-caret-down"></i></div>
+            <div class="choose"id="menu5">Videos<i class="fa-solid fa-caret-down"></i></div>
+            <div id="menu6">6</div>
+            <div id="menu7">7</div>
+            <div id="menu8">8</div>
+            <div id="menu9">9</div>
+        </div>
+        <div class="item">
+            <div><a href="http://w3schools.com"><i class="fa-solid fa-house"></i></a></div>
+            <div id="item1">HTML</div>
+            <div id="item2">CSS</div>
+            <div id="item3">JAVASCRIPT</div>
+            <div id="item4">SQL</div>
+            <div id="item5">PYTHON</div>
+            <div id="item6">PHP</div>
+            <div id="item7">BOOTSTRAP</div>
+            <div id="item8">HOW TO</div>
+            <div id="item9">W3.CSS</div>
+            <div id="item10">JAVA</div>
+            <div id="item11">JQUERY</div>
+            <div id="item12">C</div>
+            <div id="item13">C++</div>
+            <div id="item14">C#</div>
+            <div id="item15">R</div>
+            <div id="item16">React</div>
+            <div><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div><i class="fa-solid fa-earth-americas"></i></div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
     </div>
 </body>
+
 </html>
