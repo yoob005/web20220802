@@ -19,16 +19,16 @@
     <script>
 
         console.log("1~100까지 합을 구하다가, 합이 100을 넘어갈 때 그 합과 더한 숫자");
-        console.log("");
-        let sum1 = 0;
-        for (var i1 = 1; i1 < 101; i1++) {
-            sum1 = sum1 + i1;
-            if (sum1 >= 100){
-                break;
-            } 
-        }
+        // console.log("");
+        // let sum1 = 0;
+        // for (var i1 = 1; i1 < 101; i1++) {
+        //     sum1 = sum1 + i1;
+        //     if (sum1 >= 100){
+        //         break;
+        //     } 
+        // }
 
-        console.log(sum1 + i1);
+        // console.log(sum1 + i1);
 
         // console.log("");
         // var sum = 0;
@@ -41,9 +41,22 @@
 
         // console.log(sum + i);
 
+        console.log("");
+        let sum = 0;
+        for (let i = 1; i < 101; i++) {
+            sum = sum + i;
+            if (sum >= 100){
+                console.log(sum + i);
+                break;
+            } 
+            
+        }
+
+        
+
         // console.log("");
-        // let sum = 0;
-        // for (let i = 1; i < 101; i++) {
+        // var sum = 0;
+        // for (var i = 1; i < 101; i++) {
         //     sum = sum + i;
         //     if (sum >= 100){
         //         break;
@@ -51,17 +64,6 @@
         // }
 
         // console.log(sum + i);
-
-        console.log("");
-        var sum = 0;
-        for (var i = 1; i < 101; i++) {
-            sum = sum + i;
-            if (sum >= 100){
-                break;
-            } 
-        }
-
-        console.log(sum + i);
 
 
        
