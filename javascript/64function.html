@@ -17,36 +17,36 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script>
-        console.log('Start!');
-        let sum = 0;
-        for(let i = 0; i<101; i++){
-            sum = sum +i;
-            if(sum >=100){
-                break;
+
+        //첫번째 가위 바위 보
+
+        function printRps() {
+
+
+            let rpsNumber = parseInt(Math.random() * 3);
+            let rpsString;
+
+            switch (rpsNumber) {
+                case 0:
+                    rpsString = "가위";
+                    break;
+                case 1:
+                    rpsString = "바위";
+                    break;
+
+                case 2:
+                    rpsString = "보";
+                    break;
+            }
+            console.log(rpsString);
+
+        }
+
+           
+            for (let i = 0; i < 4; i++){
+                printRps()
             }
 
-            console.log('i=' + i);
-        }
-        console.log('sum=' + sum);
-
-        console.log("");
-
-        let studentNames = ["홍길동1","홍길동2","홍길동3","홍길동4","홍길동5"]
-
-        function goodMorningAllArray(Names) {
-            for(let i = 0; i < studentNames.length; i++ ){
-                console.log("Good Mornig" + Names[i]);
-            }
-        }
-
-        console.log(goodMorningAllArray(studentNames));
-
-        console.log("");
-
-        for(let star = 0; star < 5; star++){
-            console.log("*");
-
-        }
 
 
     </script>
