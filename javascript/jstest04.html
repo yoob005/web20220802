@@ -23,11 +23,16 @@
         // }
         // alert(times);
 
-        let times = 0;
-        for (let i = 1; i <= 100; i++) {
-            times += i;
+        let fruitArray = ["banana", "orange", "mango"];
+        for (let i = 0; i < fruitArray.lenth; i++) {
+            if (fruitArray[i] === "banana") {
+
+                fruitArray.splice(i, 1);
+            }
         }
-        alert(times);
+        // fruitArray.splice(0,1);
+        console.log(fruitArray);
+
     </script>
 </body>
 
