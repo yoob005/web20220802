@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia excepturi assumenda explicabo velit rem iure. Neque eligendi dolores doloribus, vel sunt dolor rem ipsum. Consequatur, perspiciatis ullam! Eius, accusamus.
+        </p>
+        <h1>
+            Reiciendis.
+        </h1>
+        <p>
+            Dolor quia, eum rerum dolorem cumque excepturi? Magnam, ad nulla vero deserunt maiores voluptate iste vel! Omnis at, sit quo optio accusamus expedita aut molestiae exercitationem, deserunt placeat corrupti voluptatum!
+        </p>
+    </div>
+    <div>
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, ad cum velit vero ullam eos cupiditate error, illo minus ducimus autem. Deleniti doloribus id modi aperiam beatae temporibus vel ut?
+        </p>
+        <h1>
+            Ipsum!
+        </h1>
+        <p>
+            Cumque nostrum corrupti ullam. Porro reprehenderit ad expedita voluptate dignissimos laboriosam aliquid quasi sit eveniet impedit. Sequi quasi adipisci distinctio blanditiis dolores dolorem nisi fuga esse expedita sit, praesentium id?
+        </p>
+    </div>
+    <div>
+        CLICK
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae atque, ipsum unde maiores earum eos rerum minima porro nam. Cupiditate nobis eum exercitationem sed ipsa provident voluptate, modi tenetur nam!
+        </p>
+        <h1>
+            Architecto?
+        </h1>
+        <p>
+            Quo quos numquam ratione voluptatum dolor? Iure doloribus eligendi deserunt quos ullam minus corrupti placeat veritatis labore pariatur fugiat ea debitis, mollitia, itaque omnis? Ex qui quod porro dolore accusantium.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+
+        let cont = document.querySelector("div");
+       
+        for(let i = 0; i < cont.length; i++){
+            cont[i].addEventListener("click" , function(){
+                let paras = this.querySelectorAll("p");
+                for(let j = 0; j < paras.length; j++){
+                    paras[j].classList.toggle("d-none");
+                }
+            })
+        }
+
+    // click 글자 클릭하면 안에 있는 p 요소 두개의 d-none 클래스 toggle 코드 작성
+    </script>
+</body>
+</html>
