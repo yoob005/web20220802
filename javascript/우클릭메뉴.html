@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #8b55e9 0%, #5d6be6 100%);
+        }
+
+        ul{
+            background-color: white;
+            border-radius: 5%;
+            margin: auto;
+            box-shadow: 2px 3px 9px 4px rgb(0 0 0 / 20%);
+            overflow: hidden;
+        }
+
+        li{
+            list-style: none;
+            line-height: 30px;
+            letter-spacing: 1px;
+            margin: auto;  
+            padding: 3px;
+            
+        }
+
+        li:hover{
+            background-color: antiquewhite;
+            /* border-radius: 24%; */
+            height: auto;
+            width: auto;
+        }
+
+        #popMenu{
+            padding-left: 0;
+        }
+
+        #subMenu{
+            width: 200px;
+            height: 50px;
+            padding-left: 0;
+        }
+
+        hr{
+            margin: auto;
+            width: 260px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul id="popMenu">
+        <li><i class="fa-solid fa-eye"></i> <style> :hover </style> Preview</li>
+        <li><i class="fa-solid fa-share"></i> Share<i class="fa-solid fa-angle-right" style="margin-left: 170px; margin-right: 10px;"></i></li>
+        <li><i class="fa-solid fa-link"></i> Get Link</li>
+        <li><i class="fa-solid fa-pen-to-square"></i> Rename</li>
+        <li><i class="fa-solid fa-trash-can"></i> Delete</li>
+        <hr>
+        <li><i class="fa-solid fa-gear"></i> Setting</li>
+    </ul>
+
+    <br>
+
+    <ul id="subMenu">
+        <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+        <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+        <li><i class="fa-brands fa-dribbble"></i>Dribble</li>
+        <li><i class="fa-solid fa-paper-plane"></i>Telegram</li>
+    </ul>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("contextmenu" , function(e){
+            e.preventDefault(); //원래 있던 오른쪽 마우스 이벤트 무효
+            let x = e.pageX + 'px'; //현재 마우스의 x 좌표
+            let y = e.pageY + 'py'; //현재 마우스의 y 좌표
+
+            const popMenu = document.getElementById('popMenu'); //팝업창을 담아옴
+
+            // 스타일 지정 , 우클릭 한 위치에 팝업창 띄우기
+
+            popMenu.style.position = 'relative';
+            popMenu.style.left = x;
+            popMenu.style.right = y;
+            popMenu.style/display = 'block';
+
+        })
+
+        //클릭시 메뉴 숨기기
+        document.addEventListener("click" , function(e){
+
+            //노출 초기화
+
+            popMenu/style.display = 'none';
+            popMenu.style.top = null;
+            popMenu.style.left = null;
+        })
+    </script>
+</body>
+</html>
